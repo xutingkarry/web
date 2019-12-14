@@ -1,0 +1,106 @@
+/*
+* @Author: 1
+* @Date:   2019-12-09 22:31:34
+* @Last Modified by:   1
+* @Last Modified time: 2019-12-14 19:09:41
+*/
+*{
+	padding:0;
+	margin:0;
+}
+ul,li{
+	list-style:none;
+}
+.big{
+	background-color:#ccc;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+.slider{
+	width:8400px;
+	position:absolute;
+	left:-1200px;
+}
+.pic{
+	width:1200px;
+	overflow:hidden;
+	float:left;
+}
+.box>span{
+	display:block;
+	width:30px;
+	height:50px;
+	text-align:center;
+	cursor:pointer;
+	color:#ccc;
+	top:175px;
+	line-height:50px;
+	background:rgb(255,0,0);
+	font-size:30px;
+	position:absolute;
+	opacity:0;
+}
+#left{
+	left:30px;
+}
+#right{
+	right:30px;
+}
+
+div{
+	display:block;
+}
+.box{
+	width:1200px;
+	height:397px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+.p1{
+	line-height:20px;
+	height:20px;
+	width:900px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+.p1>div{
+	width:1500px;
+	overflow:hidden;
+}
+.image{
+	margin-top:1px;
+	margin-left:160px;
+	position:absolute;
+	
+}
+#sp{
+	height:20px;
+	width:300px;
+	line-height:10px;
+	font-size:12px;
+	color:red;
+	position:absolute;
+	top:5px;
+	left:900px;
+	overflow:hidden;
+}
+.nav{
+	position:absolute;
+	left:500px;
+	bottom:20px;
+}
+.nav>li{
+	float:left;
+	width:20px;
+	height:20px;
+	background:#ccc;
+	cuisor:pointer;
+	margin:0 10px;
+	border-radius:50%;
+}
+.nav .active{
+	background:red;
+	color:white;
+}

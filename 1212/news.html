@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="animate.js"></script>
+        <style type="text/css">
+        	*{
+				padding: 0px;
+				margin: 0px;
+			}
+			.head{
+				margin:0 auto;
+				height: 100px;
+				width: 1200px;
+				background-color:white;
+				position: relative;
+			}
+			.head1>a{
+				color: black;
+			}
+
+			.head>img{
+				position: absolute;
+				top: 50%;
+				transform: translate(0, -50%);
+			}
+			.head1{
+				float: right;
+			}
+			.head1>a>li{
+				display: inline-block;
+				width: 130px;
+				height: 100px;
+				text-align: center;
+				line-height: 100px;
+				font-weight: bold;
+			}
+			.head1>a:hover{
+				color: #fe6d00;
+			}
+
+
+        	.box1{
+        		width: 100%;
+        		height:50px;
+        	}
+        	.box11{
+        		width:800px;
+        		height:50px;
+        		margin:0 auto;
+        	}
+        	.list>li{
+        		display: inline-block;
+        		list-style: none;
+        		width:176px;
+        		height: 50px;
+        		line-height: 50px;
+
+        	}
+        	.li1>a{
+        		text-decoration: none;
+        		color:black;
+        		margin-left:59px; 
+        		
+        	}
+        	.li1:hover{
+        		background-color: #ffffcc;
+
+        	}
+        	#roll {
+             position:fixed; 
+             font-size:14px;
+             background-color: #ffffcc;
+             display: inline;
+             border: 1px solid #ccc;
+        	}
+        	.box2{
+        		height: 500px;
+        		width:800px;
+        		border-top:1px solid black;
+        		border-bottom:1px solid black;
+        		text-indent: 0;
+        		margin:0 auto;
+        	}
+        	.p{
+        		margin:0 auto;
+        		width:800px;
+        		line-height: 1.8em;
+        		text-indent: 2em;
+        		text-align:left;
+        		color:#808080;
+        		border:1px solid black;
+        	}
+        	.boxs{
+        		position:absolute;
+        		margin:0 auto;
+        		width:100%;
+        		height:500px;
+        		overflow:hidden;
+        	}
+        	.boxs>img{
+        		overflow:hidden;
+        		position:absolute;
+        		top:140px;
+        		left:300px;
+        	}
+        	.sliders{
+        		width:9600px;
+        		position:absolute;
+        		left:-1920px;
+        		font-size:0;
+        	}
+        	.slide{
+        		position:relative;
+        		display:inline-block;
+        		width:1920px;
+        		height:500px;
+        		overflow:hidden;
+        	}
+        	.up{
+        		position:absolute;
+        		top:140px;
+        		left:400px;
+        		color:brown;
+        	}
+        	.mou{
+        		font-size:35px;
+        		color:brown;
+        	}
+        	.pet{
+        		color:black;
+        		font-size:35px;
+        		opacity:0.6;
+        	}
+        	.up.english{
+        		color: brown;
+				font-size: 14px;
+				margin-bottom: 15px;
+        	}
+        	.bigs{
+        		color: orangered;
+				font-size: 35px;
+        	}
+        	.slide>img{
+        		position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+        	}
+        	.down{
+        		height: 30px;
+				width: 100%;
+				background-color: black;
+				opacity: 0.3;
+				position: absolute;
+				bottom:0;
+        	}
+        	.navs{
+        		position: absolute;
+				bottom: 5%;
+				left: 50%;
+				transform: translate(-50%, 0);
+        	}
+        	.navs>li{
+        		display: inline-block;
+				background-color: #ccc;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				margin:0 10px;
+				cursor: pointer;
+        	}
+        	#active{
+        		background-color:red;
+        	}
+        	#slider{
+        		width:800px;
+        		height:500px;
+        	}
+        	.bottom{
+        		width:100%;
+				height: 150px;
+				/* float: right; */
+				position:relative;
+				top:550px;
+				overflow:hidden;
+			}
+			.gray{
+				background-color:lightgray;
+				width: 100%;
+				height: 50px;
+			}
+			.black{
+				background-color: black;
+				width: 100%;
+				height: 100px;
+			}
+			.aa{
+				font-size: 15px;
+				font-weight: 100;
+				text-align: center;
+				line-height: 50px;
+			}
+			.aa>a{
+				line-height:50px;
+				color: black;
+				text-decoration: none;
+			}
+			.black>p{
+				font-size: 15px;
+				line-height: 27px;
+				font-weight: 100;
+				text-indent:30px;
+				text-align: center;
+				line-height: 50px;
+				color: white;
+			}
+			.sport{
+				position:fixed;
+				opacity: 0.5;
+				top:40px;
+			}
+        </style>
+    </head>
+    <body>
+    	<div class="sport" id="sports">
+    		<div>
+    			<img src="image/100.gif" style="width: 300px;height:300px;">
+    		</div>
+    	</div>
+    	<div width:100%;">
+	    	<div class="head">
+			<img src="image/logon.png" alt="">
+			<ul class="head1">
+				<a href="#"><li>网站首页</li></a>
+				<a href="#"><li>关于我们</li></a>
+				<a href="#"><li style="color:orangered;">新闻动态</li></a>
+				<a href="#"><li>宠物用品</li></a>
+				<a href="#"><li>在线留言</li></a>
+				<a href="#"><li>联系我们</li></a>
+			</ul>
+			</div>
+
+			<div style="width:100%;" id="main">
+				<div style="width: 100%; overflow: hidden;">
+					<div class="boxs" id="boxs">
+				    	<div class="sliders" id="sliders">
+				    		<div class="slide"><img src="image/02.jpg" class="new"></div>
+				    		<div class="slide"><img src="image/00.jpg" class="new"></div>
+				    		<div class="slide"><img src="image/01.jpg" class="new"></div>
+				    		<div class="slide"><img src="image/02.jpg" class="new"></div>
+				    		<div class="slide"><img src="image/00.jpg" class="new"></div>
+				    	</div>
+				    	<img src="image/wenzi.png">
+				    	<div class="up">
+				    		<p><span class="mou">MOUMOU</span><span class="pet">宠物生活馆</span></p>
+				    		<p class="english">SO-AND-SO PET LIFE HALL</p>
+				    		<p><span class="bigs">您</span><span>有您的亲人、朋友、事业，</span><span class="bigs">但我</span><span>只有你！</span><br/><span>用心去关爱你的宠物宝贝</span></p>
+				    	</div>
+				    	<div class="down">
+				    		<ul class="navs" id="navs">
+				    			<li class="active" id="active"></li>
+				    			<li></li>
+				    			<li></li>
+				    		</ul>
+				    	</div>
+				    </div>
+			    </div>
+		    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div style="position:relative;top: 500px;">
+		    	<div class="box1">
+		    		<div class="box11">
+		    			<ul class="list" id="nav">
+		    				<li class="li1" id="li1"><a href="#">公司新闻</a></li>
+		    				<li class="li1" id="li1"><a href="#">行业动态</a></li>
+		    				<li class="li1" id="li1"><a href="#">最新公告</a></li>
+		    				<li class="li1" id="li1"><a href="#">养宠知识</a></li>
+		    			</ul>
+		    		</div>
+		    	</div>
+		    	<br/>
+		    	<div class="p">
+		    		<p style="font-size:14px;">现代人养宠物，养的最多的非狗莫属。狗与人的关系比较复杂，作为宠物的经典例子，分析狗与人的关系，也可以认为是在分析宠物与人的关系。在春秋时代，人们养过许多动物，养的是“鸡豚狗彘”为代表的六畜。注意啊，在以前的平民百姓家里，狗主要是作为六畜中的一种来养的，而六畜是养来干嘛的？养来是作为食物储备的。这个年代里，温饱问题都没有解决，快饿死了怎么办？只能杀狗吃肉，一般人是不会把狗当成宠物来养，也养不起宠物。随着人类的进步，到了现代，普通人的温饱问题基本得到解决。物质需求满足了，得去解决精神需求。现在，人们养宠物主要是满足精神需求，具体原因各不相同。原因一：真无聊。别人都宅在家里，不好意思打扰，而自己总觉得上网聊天不大真实，所以养只狗。你说为什么不养猫？一个人在家多没安全感，养只大型犬吓唬人。原因二：养只宠物带小孩。由于自己要上班，孩子挺无聊的。为了不让小孩拆家，养只狗跟小孩做个伴，也可以增加许多乐趣。原因三：跟风养狗。这些人看到了养狗的乐趣，却没看到其麻烦，如果主人没有类似与前两个原因的刚需，宠物多半是养不下去的。如果是狗，会变成流浪狗进入人的生活区，引起许多矛盾。如果将狗视为食物储备。这时候，狗是没有精神地位的。猎人带狗去打猎。狗是猎人的工具，代替了人的部分功能，存在极少的合作共生关系。在这个时候，养狗是为了解决物质需求，狗的地位算得上是猎人的伙伴。如果养狗是为了打发时间、增加生活乐趣。这时候，狗满足了人的精神需求，填充了人的精神世界，这时候，狗的地位是宠物，是人的精神延伸。如果把狗当孩子养。狗还没有这么聪明，能完全代替人，任何宠物都不具备精神传承功能。再回过头来恶意揣测一番，如果提出这个观点的不是宠物店老板，那么这个人就是把自己的精神延伸当成独立个体，寻求自我满足。</p>
+		    		<div class="box2">
+		    			<img src="image/0.jpg" onclick="pic();" id="slider">
+		    		</div>
+		    		<p style="font-size:14px;">你了解怎么和动物相处了吗？愿你能与你的爱宠相处融洽，它能带给你更多的快乐。</p>
+		    	</div>
+		    </div>
+	    	<div class="bottom">
+				<div class="gray">
+					<p class="aa">
+		                <a href="">网站首页</a>
+		                <span>&nbsp;|&nbsp;</span>
+		                <a href="">关于我们</a>
+		                <span>&nbsp;|&nbsp;</span>
+		                <a href="">新闻动态</a>
+		                <span>&nbsp;|&nbsp;</span>
+		                <a href="">宠物用品</a>
+		                <span>&nbsp;|&nbsp;</span>
+		                <a href="">在线留言</a>
+		                <span>&nbsp;|&nbsp;</span>
+		                <a href="">联系我们</a>
+		            </p>
+				</div>
+				<div class="black">
+					<p>©2004-2014 版权所有 © 某某公司  未经许可  严禁复制  | 沪ICP备000000号</p>
+					<p>联系电话：010-0000-0000</p>
+				</div>
+			</div>
+		</div>
+    </body>
+    <script type="text/javascript">
+    	var sports=document.getElementById("sports");
+    	var boxs = document.getElementById("boxs");
+		var sliders = document.getElementById("sliders");
+		var oNavlist = document.getElementById("navs").children;
+		var index=1;
+		var move=false;
+		var time;
+		var timers;
+		window.onload=function(){
+			timers=setInterval(function(){
+				var now=parseInt(getStyle(sports,"left"));
+				var news=parseInt(getStyle(sports,"top"));
+				if(now>1200 || now<0){
+					sports.style.top=news+19+"px";
+					if(news>266){
+						sports.style.top=0+"px";
+					}
+					if(now>1200){
+						sports.style.left=now-4+"px";
+					}
+					if(now<0){
+						sports.style.left=now+4+"px";
+					}
+					
+				}
+				else{
+					if(news%2==0){
+						sports.style.left=now+4+"px";
+					}
+					if(news%2==1){
+						sports.style.left=now-4+"px";
+					}
+
+				}
+			}, 20);
+		}
+		// .onclick=function(){
+		// 	clearInterval(timers);
+		// }
+
+
+
+
+
+
+		time=setInterval(next,3000);
+		boxs.onmouseover=function(){
+			clearInterval(time);
+		}
+		boxs.onmouseout=function(){
+			time=setInterval(next,3000);
+		}
+
+		for(var i=0;i<oNavlist.length;i++){
+			oNavlist[i].index=i;
+			oNavlist[i].onclick=function(){
+				index=this.index+1;
+				navmove();
+				animate(sliders,{left:-1920*index});
+			}
+		}
+		function next(){
+			if(move){
+				return;
+			}
+			move=true;
+			index++;
+			navmove();
+			animate(sliders,{left:-1920*index},function(){
+				if(index==4){
+					sliders.style.left="-1920px";
+					index=1;
+				}
+				move=false;
+			});
+		}
+		function navmove(){
+			for(var i = 0;i<oNavlist.length;i++){
+				oNavlist[i].id = "";
+			}
+			if(index > 3){
+				oNavlist[0].id = "active";
+			}else if(index<=0){
+				oNavlist[2].id = "active";
+			}else{
+				oNavlist[index-1].id = "active";
+			}
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    	var lis=document.getElementsByTagName("li");
+    	var i;
+    	for(i=9;i<lis.length;i++){
+    		lis[i].onmouseover=function(e){
+    			var e=e||window.event;
+    			var roll=document.createElement("div");
+    			roll.id="roll";
+    			roll.innerHTML=this.lastChild.innerHTML;
+    			roll.style.left=e.clientX+10+"px";
+    			roll.style.top=e.clientY+10+"px";
+    			document.body.appendChild(roll);
+    		}
+    		lis[i].onmousemove=function(e){
+    			var roll=document.getElementById("roll");
+    			roll.style.left=e.clientX+10+"px";
+    			roll.style.top=e.clientY+10+"px";
+
+    		}
+    		lis[i].onmouseout=function(){
+    			document.body.removeChild(roll);
+    		}
+    	}
+    	function pic(){
+    		// setInterval(function(){
+    		// 	var slider=document.getElementById("slider");
+	    	// 	slider.src="";
+
+	    	// 	var j=Math.floor(Math.random()*6);
+	    	// 		slider.src="image/"+j+".jpg";
+
+    		// }, 2000)
+    		var slider=document.getElementById("slider");
+    		slider.src="";
+
+    		var j=Math.floor(Math.random()*6);
+    			slider.src="image/"+j+".jpg";
+    	}
+    	setInterval(function(){
+    		var slider=document.getElementById("slider");
+	    	slider.src="";
+
+	    	var j=Math.floor(Math.random()*6);
+	    		slider.src="image/"+j+".jpg";
+
+    	}, 2000)
+    </script>
+</html>
